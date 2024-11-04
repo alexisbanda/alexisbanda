@@ -89,6 +89,21 @@ section {
     height: 20px;
     background-color: var(--accent-color);
 }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
 
 /* Companies Section Styling */
 #companies ul {
@@ -100,15 +115,29 @@ section {
 }
 
 /* Download CV Button */
+#contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #00796b;
+}
+
 .download-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: var(--accent-color);
     color: var(--text-color);
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
+    font-weight: bold;
 }
+
 .download-btn:hover {
     background-color: #00796b;
 }
@@ -120,33 +149,48 @@ section {
     --accent-color: #00796b;
 }
 
-/* Slick carousel button adjustments */
+/* Botones personalizados de carrusel */
 .slick-prev, .slick-next {
-    background-color: var(--accent-color);
+    background-color: rgba(0, 191, 165, 0.8);
     border: none;
     border-radius: 50%;
     color: #fff;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .slick-prev:hover, .slick-next:hover {
     background-color: #00796b;
 }
 
-/* Positioning */
 .slick-prev {
-    left: -50px; /* Adjust position if necessary */
-    z-index: 1;
+    left: -45px;
 }
 
 .slick-next {
-    right: -50px; /* Adjust position if necessary */
-    z-index: 1;
+    right: -45px;
+}
+
+/* Oculta el texto de "Previous" y "Next" */
+.slick-prev:before, .slick-next:before {
+    content: ''; /* Elimina el contenido de texto por defecto */
+}
+
+/* Agrega iconos personalizados usando unicode o emojis */
+.slick-prev::after {
+    content: '◀'; /* Usa un icono de flecha izquierda */
+}
+
+.slick-next::after {
+    content: '▶'; /* Usa un icono de flecha derecha */
 }
 
