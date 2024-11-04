@@ -7,6 +7,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 $(document).ready(function(){
+AOS.init();
     $('.project-carousel').slick({
         infinite: true,
         slidesToShow: 2,

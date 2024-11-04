@@ -11,6 +11,8 @@ body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 header {
@@ -28,10 +30,12 @@ header {
     color: var(--text-color);
     border: none;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 #theme-toggle:hover {
     background-color: #00796b;
+    transform: scale(1.1);
 }
 
 /* Título principal de la página (h1) */
@@ -68,6 +72,17 @@ p {
     margin-bottom: 5px;
 }
 
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del enlace */
+}
+
+/* Opcional: Estilo de hover para los enlaces */
+a:hover {
+    text-decoration: underline; /* Puedes optar por agregar subrayado solo al pasar el cursor */
+    color: #00bfa5; /* Cambia al color que prefieras en el hover */
+}
+
 /* Centering and setting a uniform width for each section */
 /* Ancho uniforme para todas las secciones */
 section {
@@ -93,6 +108,12 @@ section {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
 
 /* Project Carousel */
 .project-carousel {
