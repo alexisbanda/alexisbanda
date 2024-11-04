@@ -11,9 +11,12 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
+        adaptiveHeight: true,
+        centerMode: true,
+        centerPadding: '0',
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1
                 }
@@ -21,3 +24,4 @@ $(document).ready(function(){
         ]
     });
 });
+

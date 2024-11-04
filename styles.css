@@ -54,18 +54,27 @@ section {
 
 /* Project Carousel */
 .project-carousel {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
+
 .project-card {
     padding: 15px;
     background-color: #333;
     border-radius: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: left;
+    color: #ddd;
     transition: transform 0.3s ease;
+    margin: 0 10px; /* Add spacing between cards */
 }
+
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 191, 165, 0.5);
 }
+
 
 /* Skill Bars */
 .skill-bar {
@@ -110,3 +119,34 @@ section {
     --text-color: #121212;
     --accent-color: #00796b;
 }
+
+/* Slick carousel button adjustments */
+.slick-prev, .slick-next {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #00796b;
+}
+
+/* Positioning */
+.slick-prev {
+    left: -50px; /* Adjust position if necessary */
+    z-index: 1;
+}
+
+.slick-next {
+    right: -50px; /* Adjust position if necessary */
+    z-index: 1;
+}
+
