@@ -200,7 +200,7 @@ section {
     font-weight: bold;
     padding: 12px 25px;
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
