@@ -14,8 +14,12 @@ body {
 }
 
 header {
+    text-align: center;
     padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Limita el ancho del header */
 }
+
 
 #theme-toggle {
     margin-top: 10px;
@@ -64,15 +68,6 @@ p {
     margin-bottom: 5px;
 }
 
-
-/* Profile Photo Styling */
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
 /* Centering and setting a uniform width for each section */
 /* Ancho uniforme para todas las secciones */
 section {
@@ -85,6 +80,19 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Profile Photo Styling */
+/* Centrar la sección de foto y ajustar la imagen */
+#photo {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* Project Carousel */
 .project-carousel {
