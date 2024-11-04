@@ -1,34 +1,45 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Banda's Porfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header, section {
-            padding: 20px;
-            margin: 10px;
-        }
-    </style>
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Hi, this is Christian</h1>
-        <p>Backend Web Dev, mostly</p>
+        <h1>Hello, I'm [Your Name]</h1>
+        <p>Web Developer & Backend Specialist</p>
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
-    <section>
-        <h2>Projects and Xperiences</h2>
-        <p>Let see.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about your skills and experience.</p>
     </section>
-    <section>
-        <h2>Talk to me</h2>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project Name</h3>
+                <p>Short description of the project, technologies used, and purpose.</p>
+                <a href="https://link-to-project.com" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Magento</li>
+            <li>Docker</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
         <p>LinkedIn | GitHub | Email</p>
     </section>
+    <script src="scripts.js"></script>
 </body>
 </html>
