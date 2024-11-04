@@ -34,8 +34,9 @@ header {
     background-color: #00796b;
 }
 
+/* Centering and setting a uniform width for each section to achieve a landing page effect */
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     max-width: 800px;
     border-radius: 8px;
