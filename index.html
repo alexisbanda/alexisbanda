@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Banda's Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header>
@@ -13,52 +14,84 @@
         <p>Seasoned Web Developer & Magento Technical Leader</p>
         <button id="theme-toggle">Toggle Theme</button>
     </header>
+    
+    <!-- Photo Section -->
+    <section id="photo">
+        <img src="profile_photo.jpg" alt="Christian Banda's Photo" class="profile-photo">
+    </section>
+    
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>
             With over 15 years of experience in full-stack development, Magento e-commerce solutions, and technical leadership, I have a proven track record in driving significant improvements in performance and user experience. My expertise spans backend development, cross-functional collaboration, and agile methodologies, with a focus on delivering high-quality digital solutions for dynamic tech environments.
         </p>
     </section>
+    
+    <!-- Projects Section with Carousel -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-grid">
+        <div class="project-carousel">
             <div class="project-card">
                 <h3>Magento E-commerce Platform Optimization</h3>
-                <p>Led a team of developers to optimize performance and scalability for an enterprise-level Magento platform, improving load times and user experience.</p>
-                <a href="https://link-to-project.com" target="_blank">View Project</a>
+                <p>Led a team of developers to optimize performance and scalability for an enterprise-level Magento platform.</p>
+                <a href="https://balloon-group.com" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>ERP System Implementation</h3>
-                <p>Managed the implementation of a custom ERP solution, integrating cross-department functionalities to streamline operations and enhance productivity.</p>
-                <a href="https://link-to-project.com" target="_blank">View Project</a>
+                <p>Managed the implementation of a custom ERP solution, streamlining operations and enhancing productivity.</p>
+                <a href="https://espaciolink.com" target="_blank">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Backend Solutions for Infracommerce</h3>
-                <p>Developed and maintained backend solutions for e-commerce platforms, leveraging PHP and Magento for seamless functionality across multiple integrations.</p>
-                <a href="https://link-to-project.com" target="_blank">View Project</a>
+                <p>Developed and maintained backend solutions for e-commerce platforms, leveraging PHP and Magento.</p>
+                <a href="https://infracommerce.com" target="_blank">View Project</a>
             </div>
         </div>
     </section>
+    
+    <!-- Skills Section with Skill Bars -->
     <section id="skills">
         <h2>Skills</h2>
+        <div class="skill-bar">
+            <span>PHP</span>
+            <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>Magento</span>
+            <div class="progress"><div class="progress-bar" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+        </div>
+    </section>
+    
+    <!-- Companies Section -->
+    <section id="companies">
+        <h2>Companies I've Worked With</h2>
         <ul>
-            <li>Magento & E-commerce Platforms</li>
-            <li>PHP, HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>Frontend Frameworks: React.js, Vue.js</li>
-            <li>Backend Frameworks: Laravel, Node.js</li>
-            <li>Leadership & Team Management</li>
-            <li>Agile Methodologies & Project Coordination</li>
-            <li>Bilingual: English & Spanish</li>
+            <li>Fast Forward for Balloon Group (USA)</li>
+            <li>Infracommerce Latam (Mexico)</li>
+            <li>Química Ariston (Ecuador)</li>
+            <li>Link Design (Ecuador)</li>
+            <li>Banco Solidario (Ecuador)</li>
         </ul>
     </section>
+    
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <p>
             <a href="https://www.linkedin.com/in/christian-alexis-banda-68609446/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/your-github-username" target="_blank">GitHub</a> |
+            <a href="https://github.com/alexisbanda" target="_blank">GitHub</a> |
             <a href="mailto:christian.alexis.banda@gmail.com">Email</a>
         </p>
+        <a href="ChristianBanda.pdf" class="download-btn" download>Download My CV</a>
     </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
