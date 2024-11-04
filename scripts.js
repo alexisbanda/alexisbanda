@@ -23,5 +23,9 @@ $(document).ready(function(){
             }
         ]
     });
+
+    // Forzar la eliminación del texto en los botones después de que Slick se cargue
+    $('.slick-prev, .slick-next').text(''); // Elimina cualquier texto dentro de los botones
 });
+
 

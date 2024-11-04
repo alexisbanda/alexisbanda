@@ -7,14 +7,10 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 header {
@@ -34,6 +30,41 @@ header {
     background-color: #00796b;
 }
 
+/* Título principal de la página (h1) */
+h1 {
+    font-size: 2.5em;  /* Aumenta el tamaño */
+    font-weight: bold;
+    color: var(--accent-color);  /* Usa el color de acento */
+    margin-bottom: 10px;
+}
+
+/* Títulos de secciones (h2) */
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Subtítulos y textos de introducción */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #cccccc;  /* Un gris claro que no sobresalga */
+}
+
+.small-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dddddd;
+    margin-bottom: 5px;
+}
+
+
 /* Profile Photo Styling */
 .profile-photo {
     width: 150px;
@@ -43,14 +74,17 @@ header {
 }
 
 /* Centering and setting a uniform width for each section */
+/* Ancho uniforme para todas las secciones */
 section {
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
+    width: 90%;
     border-radius: 8px;
     background-color: #1e1e1e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Project Carousel */
 .project-carousel {
@@ -100,9 +134,13 @@ section {
     margin-bottom: 10px;
 }
 
+/* Nombres de habilidades */
 .skill span {
+    font-size: 1em;
     font-weight: bold;
+    color: #00bfa5;
 }
+
 
 
 /* Companies Section Styling */
@@ -110,16 +148,37 @@ section {
     list-style: none;
     padding: 0;
 }
+
 #companies li {
     margin: 10px 0;
 }
 
-/* Download CV Button */
-#contact a {
-    color: var(--accent-color);
-    text-decoration: none;
+/* Sección de empresas */
+#companies .company strong {
+    font-size: 1.1em;
     font-weight: bold;
-    margin: 0 5px;
+    color: #ffffff;
+}
+
+#companies .company small {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+#companies .company p {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+
+/* Download CV Button */
+/* Enlaces de contacto */
+#contact a {
+    font-size: 1.1em;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin: 0 10px;
     transition: color 0.3s;
 }
 
@@ -127,20 +186,24 @@ section {
     color: #00796b;
 }
 
+/* Botón de descarga de CV */
 .download-btn {
-    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
     padding: 12px 25px;
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
-    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .download-btn:hover {
     background-color: #00796b;
 }
+
 
 /* Light Theme */
 .light-theme {
@@ -150,6 +213,8 @@ section {
 }
 
 /* Botones personalizados de carrusel */
+
+/* Botones de carrusel personalizados */
 .slick-prev, .slick-next {
     background-color: rgba(0, 191, 165, 0.8);
     border: none;
@@ -160,13 +225,21 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 0.8em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+/* Oculta el texto de "Previous" y "Next" */
+.slick-prev:before,
+.slick-next:before {
+    content: ''; /* Asegúrate de que el contenido esté vacío */
+    display: none; /* Fuerza a que no se muestre nada */
+}
+
 
 .slick-prev:hover, .slick-next:hover {
     background-color: #00796b;
@@ -180,12 +253,7 @@ section {
     right: -45px;
 }
 
-/* Oculta el texto de "Previous" y "Next" */
-.slick-prev:before, .slick-next:before {
-    content: ''; /* Elimina el contenido de texto por defecto */
-}
-
-/* Agrega iconos personalizados usando unicode o emojis */
+/* Iconos de flecha personalizados */
 .slick-prev::after {
     content: '◀'; /* Usa un icono de flecha izquierda */
 }
@@ -193,4 +261,6 @@ section {
 .slick-next::after {
     content: '▶'; /* Usa un icono de flecha derecha */
 }
+
+
 
